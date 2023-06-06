@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: rgb(132, 146, 242);
+    background: linear-gradient(0deg, rgb(171, 182, 255) 0%, rgb(226, 184, 248) 98%);
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 80px;
+    color: #1d1e4c;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.top{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.top h4{
+    text-align: end;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.top h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+}
+
+.image{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image, img{
+    width: 300px;
+    height: 300px;
+}
+
+.about{
+    margin-top: 50px;
+}
+
+.about h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+.life h2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.life p{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.ref{
+    margin-top: 10px;
+}
+
+.ref h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ref p{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.end h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer{
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+footer p{
+    text-align: end;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), #000000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 50px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    padding: 50px;
+    height: 100%;
+}
